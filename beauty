@@ -1,0 +1,44 @@
+
+{
+  "name": "beautify_experiments",
+  "description": "beautify iterations",
+  "type": "AB_TEST",
+  "variants": [
+    {
+      "canonicalName": "beautify_disabled",
+      "displayName": "beautify_disabled",
+      "description": "baseline",
+      "configuration": {}
+    },
+    {
+      "canonicalName": "beautify_free",
+      "displayName": "beautify_free",
+      "description": "giving the feature for free",
+      "configuration": {}
+    },
+    {
+      "canonicalName": "beautify_paid",
+      "displayName": "beautify_paid",
+      "description": "giving the feature to subscribers only",
+      "configuration": {}
+    }
+  ],
+  "experiments": [
+    {
+      "name": "beautify_v1",
+      "description": "adding the feature as paid or free",
+      "exposure": 0.27,
+      "state": "OPEN",
+      "sticky": false,
+      "stage": "DEV",
+      "filters": {},
+      "variants": [
+        {
+          "canonicalName": "baseline",
+          "state": "OPEN",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
